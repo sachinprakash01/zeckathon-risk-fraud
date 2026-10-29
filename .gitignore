@@ -1,0 +1,7 @@
+data/raw/*.csv
+venv/
+__pycache__/
+*.pyc
+catboost_info/
+.pytest_cache/
+.ipynb_checkpoints/
