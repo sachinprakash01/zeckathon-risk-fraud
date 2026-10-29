@@ -1,5 +1,7 @@
 # Explainable Fraud Triage (Zeckathon 2026 - Risk & Fraud Analytics)
 
+`artifacts/` already contains the results of the run described below, so the app can be viewed without PaySim: `pip install -r requirements.txt`, then `streamlit run app.py`.
+
 A payment-fraud triage system that turns a CatBoost risk score into a **FLAG / REVIEW / CLEAR**
 decision, with plain-English reasons for every case and a fixed analyst-capacity budget.
 
