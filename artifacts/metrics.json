@@ -1,0 +1,129 @@
+{
+  "cuts": {
+    "train_max_step": 482,
+    "valid_max_step": 594,
+    "max_step": 743
+  },
+  "model": {
+    "pr_auc": 0.9999948862412582,
+    "roc_auc": 0.9999999305781466,
+    "base_rate": 0.01338404272536009,
+    "n": 123580,
+    "n_fraud": 1654
+  },
+  "rule_only_baseline": {
+    "pr_auc": 0.8656568918967184,
+    "roc_auc": 0.9817121912371334,
+    "base_rate": 0.01338404272536009,
+    "n": 123580,
+    "n_fraud": 1654
+  },
+  "recall_at_review_budget": {
+    "0.10%": {
+      "recall": 0.07496977025392987,
+      "precision": 1.0
+    },
+    "0.50%": {
+      "recall": 0.373639661426844,
+      "precision": 1.0
+    },
+    "1.00%": {
+      "recall": 0.747279322853688,
+      "precision": 1.0
+    },
+    "1.34%": {
+      "recall": 0.9993954050785974,
+      "precision": 0.9981884057971014
+    },
+    "2.00%": {
+      "recall": 1.0,
+      "precision": 0.669093851132686
+    }
+  },
+  "tiers_model_only": {
+    "FLAG": {
+      "transactions": 1654,
+      "fraud": 1652,
+      "precision": 0.9987908101571947,
+      "share_of_all_fraud": 0.9987908101571947
+    },
+    "REVIEW": {
+      "transactions": 0,
+      "fraud": 0,
+      "precision": 0.0,
+      "share_of_all_fraud": 0.0
+    },
+    "CLEAR": {
+      "transactions": 121926,
+      "fraud": 2,
+      "precision": 1.640339222151141e-05,
+      "share_of_all_fraud": 0.0012091898428053204
+    },
+    "FLAG+REVIEW": {
+      "transactions": 1654,
+      "fraud": 1652,
+      "precision": 0.9987908101571947,
+      "recall": 0.9987908101571947
+    }
+  },
+  "tiers_model_plus_rules": {
+    "FLAG": {
+      "transactions": 1680,
+      "fraud": 1652,
+      "precision": 0.9833333333333333,
+      "share_of_all_fraud": 0.9987908101571947
+    },
+    "REVIEW": {
+      "transactions": 157,
+      "fraud": 1,
+      "precision": 0.006369426751592357,
+      "share_of_all_fraud": 0.0006045949214026602
+    },
+    "CLEAR": {
+      "transactions": 121743,
+      "fraud": 1,
+      "precision": 8.214024625645828e-06,
+      "share_of_all_fraud": 0.0006045949214026602
+    },
+    "FLAG+REVIEW": {
+      "transactions": 1837,
+      "fraud": 1653,
+      "precision": 0.8998366902558519,
+      "recall": 0.9993954050785974
+    }
+  },
+  "tiers_final": {
+    "FLAG": {
+      "transactions": 1654,
+      "fraud": 1652,
+      "precision": 0.9987908101571947,
+      "share_of_all_fraud": 0.9987908101571947
+    },
+    "REVIEW": {
+      "transactions": 0,
+      "fraud": 0,
+      "precision": 0.0,
+      "share_of_all_fraud": 0.0
+    },
+    "CLEAR": {
+      "transactions": 121926,
+      "fraud": 2,
+      "precision": 1.640339222151141e-05,
+      "share_of_all_fraud": 0.0012091898428053204
+    },
+    "FLAG+REVIEW": {
+      "transactions": 1654,
+      "fraud": 1652,
+      "precision": 0.9987908101571947,
+      "recall": 0.9987908101571947
+    }
+  },
+  "rules_used_in_final": false,
+  "thresholds": {
+    "flag": 0.8035067074393474,
+    "review": 0.8035067074393474,
+    "mode": "target",
+    "flag_precision": 0.999,
+    "review_recall": 0.99
+  }
+}

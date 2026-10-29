@@ -1,0 +1,7 @@
+{
+  "flag": 0.8035067074393474,
+  "review": 0.8035067074393474,
+  "mode": "target",
+  "flag_precision": 0.999,
+  "review_recall": 0.99
+}
